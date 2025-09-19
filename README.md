@@ -4,7 +4,6 @@ This is my certification project, presented in 2024.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
