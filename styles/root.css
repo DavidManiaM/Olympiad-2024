@@ -1,0 +1,8 @@
+:root{
+    --header-height: 120px;
+    --sidebar-width: 250px;
+    --theme-color: red;
+    --light-theme-color: rgb(255, 113, 113);
+    --accent-color: red;
+    --shop-border-radius: 20px;
+}

@@ -1,0 +1,56 @@
+@import "./root.css";
+
+#sidebar{
+    width: var(--sidebar-width);
+    display: inline-block;
+    position: sticky;
+    top: 50px;
+    height: 93.2vh;
+    margin-top: -70px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    transition: 500ms;
+
+    overflow: hidden;
+}
+#sidebar, #sidebar *{
+    z-index: 10;
+    opacity: 1;
+}
+
+#sidebar.closed{
+    margin-left: calc(0px - var(--sidebar-width));
+    transition: 500ms;
+    transition-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+#sidebar.open{
+    margin-left: 0;
+    transition: 500ms;
+    transform: translateZ(0);
+}
+
+#sidebarIcon:hover{
+    cursor: pointer;
+}
+
+.sidebarRow{
+    background: -webkit-linear-gradient(left, rgb(255, 88, 88), rgb(255, 173, 173));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 6vh 30px 6vh 20px;
+    transition: 200ms;
+
+    z-index: 20;
+}
+.sidebarRow:first-of-type{
+    padding-top: 18vh;
+}
+.sidebarRow:hover{
+    cursor: pointer;
+    transform: scale(115%);
+    transition: 200ms;
+}

@@ -1,0 +1,25 @@
+*{
+    user-select: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.hov:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}

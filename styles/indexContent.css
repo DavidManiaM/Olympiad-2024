@@ -1,0 +1,125 @@
+body{
+    background-color: #000;
+}
+
+#container {
+    position: relative;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    margin-top: -95vh;
+}
+
+#container, #container *, #content{
+    z-index: 1;
+}
+
+#container::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(120vh - var(--header-height));
+    filter: brightness(50%);
+    z-index: -1;
+    background: url("../images/periodicTable2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+h1{
+    position: relative;
+    top: 20vh;
+    background: -webkit-linear-gradient(right, white, var(--light-theme-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#content {  
+    display: inline-block;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+#carrDiv{
+    overflow: hidden;
+    width: max-content;
+    transition: 400ms;
+    margin: 0;
+    padding: 0;
+}
+
+.carrouselImg{
+    padding: 0;
+    position: relative;
+    left: -36px;
+    width: 212vh;
+    height: 80vh;
+    opacity: 0.85;
+    display: inline-block;
+}
+
+.selectionImg{
+    width: 160vh;
+    height: 100%;
+}
+
+.imgBorder{
+    display: inline-block;
+    width: 330px;
+    overflow: hidden;
+    height: 600px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: 1000ms;
+    transition-timing-function: ease-in-out;
+	border: 2px solid var(--light-theme-color);
+}
+.imgBorder:hover{
+    cursor: pointer;
+}
+
+#seeStore{
+    color: white;
+    display: inline-block;
+    transition: 200ms;
+}
+#seeStore:hover{
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+.shadow{
+    position: absolute;
+    z-index: 10000;
+    width: 10vh;
+    height: 80vh;
+    margin-top: -82.2vh;
+}
+.shadow:hover{
+    cursor: pointer;
+}
+
+#shadow1{
+    background: linear-gradient(to right, #222, transparent);
+}
+
+#shadow2{
+    background: linear-gradient(to left, #222, transparent);
+    margin-left: 95.5%;
+}
+
+.shadow i{
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

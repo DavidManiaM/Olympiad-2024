@@ -1,0 +1,11 @@
+#arrow{
+    color: var(--light-theme-color);
+    transition: 600ms;
+}
+
+#arrow:hover{
+    cursor: pointer;
+    transform: scale(125%);
+    color: var(--theme-color);
+    transition: 300ms;
+}

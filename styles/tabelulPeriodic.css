@@ -1,0 +1,170 @@
+body {
+    background-color: rgba(255, 232, 232, 0.5);
+}
+
+#image {
+    margin-top: -83.6vh;
+}
+
+.sec {
+    height: calc(100vh - var(--header-height));
+}
+
+hr {
+    margin: 0;
+}
+
+.cube {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotateCube 15s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid #333;
+    backface-visibility: hidden;
+}
+
+.face img {
+    height: 250px;
+    width: 250px;
+}
+
+.front {
+    transform: translateZ(125px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(125px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(125px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(125px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(125px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(125px);
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg);
+    }
+}
+
+table span {
+    font-size: 30px;
+    text-shadow: 0 0 2px white;
+}
+
+table span.big, table span.big * {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.color {
+    display: inline-block;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(115%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+#tabelPeriodic {
+    width: 90%;
+    height: 70vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#tabelPeriodic td {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#tabelPeriodic .no-border1 {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#tabelPeriodic .no-border2 {
+    border-top: 0;
+}
+
+#tabelPeriodic .hover {
+    transition: 300ms;
+    background-color: rgb(255, 177, 177);
+    text-decoration: none;
+}
+
+#tabelPeriodic .hover a {
+    color: black;
+    width: 100%;
+    height: 100%;
+    transition: 200ms;
+}
+
+#tabelPeriodic .hover:hover {
+    cursor: pointer;
+    transform: scale(125%, 125%);
+    transition: 200ms;
+}
+
+#tabelPeriodic .hover a:hover {
+    color: var(--theme-color);
+    transition: 200ms;
+}
+
+#infoText {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50px);
+}
+
+.elementHover{
+    color: black;
+    transition: 400ms;
+    display: inline-block;
+}
+.elementHover:hover{
+    color: var(--light-theme-color);
+    transform: scale(115%);
+    transition: 200ms;
+}

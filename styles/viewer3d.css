@@ -1,0 +1,80 @@
+body{
+    overflow: hidden!important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    margin: 0;
+    padding: 0;
+}
+
+#infoTable1{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: absolute;
+    color: white;
+    left: 0;
+}
+#infoTable1 span{
+    font-size: 55px;
+    position: relative;
+}
+
+#span1{
+    position: relative;
+    top: 10px;
+}
+#span2{
+    position: relative;
+    top: 10px;
+}
+
+#spanRight{
+    position: absolute;
+    right: 0;
+    font-size: 55px;
+    background-color: black;
+    padding: 12px;
+}
+
+#scaleDiv{
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#scaleDiv div{
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-35px);
+}
+
+#line1{
+    width: 5px;
+    height: 40px;
+    background-color: black;
+}
+
+#line2{
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-top: 18.5px;
+}
+
+#line3{
+    width: 5px;
+    height: 40px;
+    background-color: black;
+    left: 100px;
+}
+
+#scale{
+    padding-left: 3px;
+}

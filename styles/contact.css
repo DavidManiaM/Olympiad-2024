@@ -1,0 +1,57 @@
+body {
+    overflow: hidden;
+    background-color: var(--light-theme-color);
+}
+
+#container {
+    margin-top: calc(-84vh - 5px);
+    padding: 15px;
+}
+
+#container .row {
+    font-size: 35px;
+}
+
+#container table {
+    background: linear-gradient(to bottom right, var(--accent-color), bisque, var(--accent-color));
+    border-radius: 0 20px 0 20px;
+}
+
+#container table td {
+    height: 120px;
+    border: 1px solid transparent;
+    padding: 10px;
+
+    background-color: white;   
+}
+
+#container table tr td:first-of-type {
+    font-weight: bold;
+}
+
+.bx-copy-alt {
+    transition: 300ms;
+}
+.bx-copy-alt:hover {
+    transform: scale(115%);
+    transition: 300ms;
+    cursor: pointer;
+}
+.copyConfirmationMessage{
+    font-size: 20px;
+    width: 150px;
+    position: absolute;
+    margin-top: -45px;
+    transform: translateX(calc(-50% - 10px));
+    opacity: 0;
+    background-color: rgb(255, 161, 161);
+    padding: 5px 5px 5px 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+#contactTable tr td:first-of-type{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+@import 'root.css';
+
+header {
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--light-theme-color);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header, header *{
+    z-index: 12;
+}
+
+header span {
+    font-size: 40px;
+    position: relative;
+    top: 35px;
+    height: min-content;
+    font-weight: bold;
+    transition: 200ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    background: -webkit-linear-gradient(left, white, rgb(255, 214, 214), white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header span:hover {
+    cursor: pointer;
+    transition: 200ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#menuIcon{
+    color: white;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+#menuIcon:hover {
+    cursor: pointer;
+}
